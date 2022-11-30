@@ -1,1 +1,5 @@
 {"clase": "Matematicas", "classCount": "5", "identity": "1/12/2022"}
+
+npm install
+ionic serve
+ionic capacitor build android
