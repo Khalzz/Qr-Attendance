@@ -175,7 +175,7 @@ let ConfirmationPage = class ConfirmationPage {
             if (classExists) {
                 if (!dateExists) {
                     this.classesH.classes.forEach(element => {
-                        if (element.title = this.clase.clase) {
+                        if (element.title == this.clase.clase) {
                             element.assistedClasses.push(this.clase.identity);
                             console.log('agregamos un identity');
                         }
@@ -186,7 +186,7 @@ let ConfirmationPage = class ConfirmationPage {
                     console.log('la clase ya existe tontito');
                 }
             }
-            else {
+            else if (!classExists) {
                 console.log('esta clase no existe');
                 this.class.classCount = this.clase.classCount;
                 this.class.title = this.clase.clase;
@@ -232,7 +232,7 @@ ConfirmationPage = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
   \**********************************************************************/
 /***/ ((module) => {
 
-module.exports = ".login {\n  --background: #E5E9F0;\n  --color: #1E1E1E;\n}\n\n.cancel {\n  margin: 10%;\n  --background: #D23D4C;\n  --color: #1E1E1E;\n}\n\n.title {\n  margin-bottom: 10%;\n}\n\n.attendance {\n  margin-bottom: 40%;\n}\n\n.general {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.button {\n  margin: 0 auto;\n  width: 80%;\n}\n\nh6 {\n  color: #888D99;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbmZpcm1hdGlvbi5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQkFBQTtFQUNBLGdCQUFBO0FBQ0o7O0FBRUE7RUFDSSxXQUFBO0VBQ0EscUJBQUE7RUFDQSxnQkFBQTtBQUNKOztBQUdBO0VBQ0ksa0JBQUE7QUFBSjs7QUFHQTtFQUNJLGtCQUFBO0FBQUo7O0FBR0E7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsdUJBQUE7QUFBSjs7QUFHQTtFQUNJLGNBQUE7RUFDQSxVQUFBO0FBQUo7O0FBR0E7RUFDSSxjQUFBO0FBQUoiLCJmaWxlIjoiY29uZmlybWF0aW9uLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2dpbntcbiAgICAtLWJhY2tncm91bmQ6ICNFNUU5RjA7XG4gICAgLS1jb2xvcjogIzFFMUUxRTtcbn1cblxuLmNhbmNlbHtcbiAgICBtYXJnaW46IDEwJTtcbiAgICAtLWJhY2tncm91bmQ6ICNEMjNENEM7XG4gICAgLS1jb2xvcjogIzFFMUUxRTtcbn1cblxuXG4udGl0bGUge1xuICAgIG1hcmdpbi1ib3R0b206IDEwJTtcbn1cblxuLmF0dGVuZGFuY2Uge1xuICAgIG1hcmdpbi1ib3R0b206IDQwJTtcbn1cblxuLmdlbmVyYWwge1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5idXR0b24ge1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIHdpZHRoOiA4MCU7XG59XG5cbmg2e1xuICAgIGNvbG9yOiAjODg4RDk5O1xufSJdfQ== */";
+module.exports = ".login {\n  --background: #E5E9F0;\n  --color: #1E1E1E;\n}\n\n.cancel {\n  margin: 10%;\n  --background: #D23D4C;\n  --color: #1E1E1E;\n}\n\n.title {\n  margin-bottom: 10%;\n}\n\n.attendance {\n  margin-bottom: 40%;\n}\n\n.general {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.button {\n  margin: 0 auto;\n  width: 80%;\n  margin-top: 3vh;\n}\n\nh6 {\n  color: #888D99;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbmZpcm1hdGlvbi5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQkFBQTtFQUNBLGdCQUFBO0FBQ0o7O0FBR0E7RUFDSSxXQUFBO0VBQ0EscUJBQUE7RUFDQSxnQkFBQTtBQUFKOztBQUlBO0VBQ0ksa0JBQUE7QUFESjs7QUFJQTtFQUNJLGtCQUFBO0FBREo7O0FBSUE7RUFDSSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsdUJBQUE7QUFESjs7QUFJQTtFQUNJLGNBQUE7RUFDQSxVQUFBO0VBQ0EsZUFBQTtBQURKOztBQUlBO0VBQ0ksY0FBQTtBQURKIiwiZmlsZSI6ImNvbmZpcm1hdGlvbi5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9naW57XHJcbiAgICAtLWJhY2tncm91bmQ6ICNFNUU5RjA7XHJcbiAgICAtLWNvbG9yOiAjMUUxRTFFO1xyXG4gICAgXHJcbn1cclxuXHJcbi5jYW5jZWx7XHJcbiAgICBtYXJnaW46IDEwJTtcclxuICAgIC0tYmFja2dyb3VuZDogI0QyM0Q0QztcclxuICAgIC0tY29sb3I6ICMxRTFFMUU7XHJcbn1cclxuXHJcblxyXG4udGl0bGUge1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTAlO1xyXG59XHJcblxyXG4uYXR0ZW5kYW5jZSB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA0MCU7XHJcbn1cclxuXHJcbi5nZW5lcmFsIHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi5idXR0b24ge1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICB3aWR0aDogODAlO1xyXG4gICAgbWFyZ2luLXRvcDogM3ZoO1xyXG59XHJcblxyXG5oNntcclxuICAgIGNvbG9yOiAjODg4RDk5O1xyXG59Il19 */";
 
 /***/ }),
 
@@ -242,7 +242,7 @@ module.exports = ".login {\n  --background: #E5E9F0;\n  --color: #1E1E1E;\n}\n\n
   \**********************************************************************/
 /***/ ((module) => {
 
-module.exports = "<ion-content>\n  <div class=\"general\">\n    <div class=\"title\">\n      <ion-text class=\"ion-text-center\"> \n        <h3>{{clase.clase}}</h3>\n        <h6>{{clase.identity}}</h6>\n      </ion-text>\n    </div>\n    \n    <div class=\"button\">\n      <ion-button routerLink=\"/general-attendance\" expand=\"block\" class=\"login\" (click)=\"detalles()\">Confirm</ion-button>\n      <ion-button routerLink=\"/homestudent\" expand=\"block\" class=\"cancel\">Cancel</ion-button>\n    </div>\n  </div>  \n</ion-content>";
+module.exports = "<ion-content>\r\n  <div class=\"general\">\r\n    <div class=\"title\">\r\n      <ion-text class=\"ion-text-center\"> \r\n        <h3>{{clase.clase}}</h3>\r\n        <h6>{{clase.identity}}</h6>\r\n      </ion-text>\r\n    </div>\r\n    \r\n    <div class=\"button\">\r\n      <ion-button routerLink=\"/homestudent\" expand=\"block\" class=\"login\" (click)=\"detalles()\">Confirm</ion-button>\r\n      <ion-button routerLink=\"/homestudent\" expand=\"block\" class=\"cancel\">Cancel</ion-button>\r\n    </div>\r\n  </div>  \r\n</ion-content>";
 
 /***/ })
 

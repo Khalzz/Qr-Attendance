@@ -91,7 +91,7 @@ export class ConfirmationPage implements OnInit {
     if (classExists) {
       if (!dateExists) {
         this.classesH.classes.forEach(element => {
-          if (element.title = this.clase.clase) {
+          if (element.title == this.clase.clase) {
             element.assistedClasses.push(this.clase.identity);
             console.log('agregamos un identity');
           }
@@ -100,7 +100,7 @@ export class ConfirmationPage implements OnInit {
         // show error message
         console.log('la clase ya existe tontito');
       }
-    } else {
+    } else if (!classExists) {
       console.log('esta clase no existe');
       this.class.classCount = this.clase.classCount;
       this.class.title = this.clase.clase;

@@ -302,7 +302,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "registerWebPlugin": () => (/* binding */ registerWebPlugin),
 /* harmony export */   "setPlatform": () => (/* binding */ setPlatform)
 /* harmony export */ });
-/* harmony import */ var C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 
 
 /*! Capacitor: https://capacitorjs.com/ - MIT License */
@@ -489,7 +489,7 @@ const createCapacitor = win => {
     let jsImplementation;
 
     const loadPluginImplementation = /*#__PURE__*/function () {
-      var _ref = (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      var _ref = (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         if (!jsImplementation && platform in jsImplementations) {
           jsImplementation = typeof jsImplementations[platform] === 'function' ? jsImplementation = yield jsImplementations[platform]() : jsImplementation = jsImplementations[platform];
         } else if (capCustomPlatform !== null && !jsImplementation && 'web' in jsImplementations) {
@@ -543,7 +543,7 @@ const createCapacitor = win => {
         });
 
         if (prop === 'addListener') {
-          p.remove = /*#__PURE__*/(0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          p.remove = /*#__PURE__*/(0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             return remove();
           });
         }
@@ -571,7 +571,7 @@ const createCapacitor = win => {
       }, callback);
 
       const remove = /*#__PURE__*/function () {
-        var _ref3 = (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        var _ref3 = (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           const callbackId = yield call;
           removeListener({
             eventName,
@@ -587,7 +587,7 @@ const createCapacitor = win => {
       const p = new Promise(resolve => call.then(() => resolve({
         remove
       })));
-      p.remove = /*#__PURE__*/(0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      p.remove = /*#__PURE__*/(0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         console.warn(`Using addListener() without 'await' is deprecated.`);
         yield remove();
       });
@@ -706,7 +706,7 @@ class WebPlugin {
     }
 
     const remove = /*#__PURE__*/function () {
-      var _ref5 = (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      var _ref5 = (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return _this.removeListener(eventName, listenerFunc);
       });
 
@@ -720,7 +720,7 @@ class WebPlugin {
     });
     Object.defineProperty(p, 'remove', {
       value: function () {
-        var _ref6 = (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        var _ref6 = (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           console.warn(`Using addListener() without 'await' is deprecated.`);
           yield remove();
         });
@@ -736,7 +736,7 @@ class WebPlugin {
   removeAllListeners() {
     var _this2 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this2.listeners = {};
 
       for (const listener in _this2.windowListeners) {
@@ -781,7 +781,7 @@ class WebPlugin {
   removeListener(eventName, listenerFunc) {
     var _this3 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const listeners = _this3.listeners[eventName];
 
       if (!listeners) {
@@ -830,7 +830,7 @@ const encode = str => encodeURIComponent(str).replace(/%(2[346B]|5E|60|7C)/g, de
 
 class CapacitorCookiesPluginWeb extends WebPlugin {
   setCookie(options) {
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         // Safely Encoded Key/Value
         const encodedKey = encode(options.key);
@@ -848,7 +848,7 @@ class CapacitorCookiesPluginWeb extends WebPlugin {
   }
 
   deleteCookie(options) {
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         document.cookie = `${options.key}=; Max-Age=0`;
       } catch (error) {
@@ -858,7 +858,7 @@ class CapacitorCookiesPluginWeb extends WebPlugin {
   }
 
   clearCookies() {
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const cookies = document.cookie.split(';') || [];
 
@@ -874,7 +874,7 @@ class CapacitorCookiesPluginWeb extends WebPlugin {
   clearAllCookies() {
     var _this4 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         yield _this4.clearCookies();
       } catch (error) {
@@ -895,7 +895,7 @@ const CapacitorCookies = registerPlugin('CapacitorCookies', {
  */
 
 const readBlobAsBase64 = /*#__PURE__*/function () {
-  var _ref7 = (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (blob) {
+  var _ref7 = (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (blob) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
 
@@ -1021,7 +1021,7 @@ class CapacitorHttpPluginWeb extends WebPlugin {
    * @param options Options to build the HTTP request
    */
   request(options) {
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const requestInit = buildRequestInit(options, options.webFetchExtra);
       const urlParams = buildUrlParams(options.params, options.shouldEncodeUrlParams);
       const url = urlParams ? `${options.url}?${urlParams}` : options.url;
@@ -1078,7 +1078,7 @@ class CapacitorHttpPluginWeb extends WebPlugin {
   get(options) {
     var _this5 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this5.request(Object.assign(Object.assign({}, options), {
         method: 'GET'
       }));
@@ -1093,7 +1093,7 @@ class CapacitorHttpPluginWeb extends WebPlugin {
   post(options) {
     var _this6 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this6.request(Object.assign(Object.assign({}, options), {
         method: 'POST'
       }));
@@ -1108,7 +1108,7 @@ class CapacitorHttpPluginWeb extends WebPlugin {
   put(options) {
     var _this7 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this7.request(Object.assign(Object.assign({}, options), {
         method: 'PUT'
       }));
@@ -1123,7 +1123,7 @@ class CapacitorHttpPluginWeb extends WebPlugin {
   patch(options) {
     var _this8 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this8.request(Object.assign(Object.assign({}, options), {
         method: 'PATCH'
       }));
@@ -1138,7 +1138,7 @@ class CapacitorHttpPluginWeb extends WebPlugin {
   delete(options) {
     var _this9 = this;
 
-    return (0,C_Users_Khals_Desktop_qr_attendance_main_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Users_Khals_Desktop_Qr_Attendance_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this9.request(Object.assign(Object.assign({}, options), {
         method: 'DELETE'
       }));
@@ -1162,7 +1162,7 @@ const CapacitorHttp = registerPlugin('CapacitorHttp', {
   \**********************************************************/
 /***/ ((module) => {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzY2FucXIucGFnZS5zY3NzIn0= */";
+module.exports = ".qr-button {\n  margin: 0 auto;\n  margin-top: 65vh;\n  width: 80%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjYW5xci5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxVQUFBO0FBQ0oiLCJmaWxlIjoic2NhbnFyLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5xci1idXR0b24ge1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICBtYXJnaW4tdG9wOiA2NXZoO1xyXG4gICAgd2lkdGg6IDgwJSA7XHJcbn0iXX0= */";
 
 /***/ }),
 
@@ -1172,7 +1172,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
   \**********************************************************/
 /***/ ((module) => {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"homestudent\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>QR Scanner</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [style.visibility]=\"content_visibility\">\n\n  <ion-button\n    expand=\"block\" \n    class=\"ion-margin\" \n    (click)=\"startScan()\">\n    Scan QR Code\n  </ion-button>\n\n  <ion-item *ngIf=\"scannedResult\">\n  </ion-item>\n</ion-content>\n\n";
+module.exports = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-back-button defaultHref=\"homestudent\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-title>QR Scanner</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content [style.visibility]=\"content_visibility\">\r\n\r\n  <ion-button\r\n    expand=\"block\" \r\n    class=\"ion-margin\" \r\n    class = \"qr-button\"\r\n    (click)=\"startScan()\">\r\n    Scan QR Code\r\n  </ion-button>\r\n\r\n  <ion-item *ngIf=\"scannedResult\">\r\n  </ion-item>\r\n</ion-content>\r\n\r\n";
 
 /***/ })
 
